@@ -1,0 +1,17 @@
+MDAC Performance Analysis
+=======================
+
+Configuration:
+- Sampling Frequency: 500.00 MHz
+- Input Frequency: 19.99 MHz
+- Full Scale Voltage: 1.00 V
+- Op-Amp Gain: 1.0e+04 V/V
+- Op-Amp Offset: 0.00 mV
+- Capacitor Mismatch Sigma: 0.000%
+- Comparator Offset: 0.00 mV
+- Loop Bandwidth: 5.00 GHz
+- Time Constant: 0.03 ns
+
+Results:
+- Signal-to-Noise Ratio (SNR): -7.14 dB
+- Effective Number of Bits (ENOB): -1.48 bits
