@@ -1,0 +1,17 @@
+MDAC Transfer Function Analysis
+==============================
+
+Configuration:
+- Full Scale Voltage: 1.00 V
+- Op-Amp Gain: 1.0e+04 V/V
+- Op-Amp Offset: 0.00 mV
+- Capacitor Values: C1 = 200.00 fF, C2 = 600.00 fF
+- Capacitor Mismatch: 0.00%
+- Comparator Offset: 0.00 mV
+- Time Constant: 0.03 ns
+
+Results:
+- Number of output codes: 7
+- Output codes observed: 0, 1, 2, 3, 4, 5, 6
+- Maximum residue: 2.0008 V
+- Minimum residue: -2.0008 V

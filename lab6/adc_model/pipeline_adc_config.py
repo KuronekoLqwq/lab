@@ -1,7 +1,7 @@
 """
 configuration for adc
 """
-
+import numpy as np
 # ADC spec
 fs = 500e6
 timebase = 1/(2*fs) # each sampling has 2 events: track&hold, so timebase should be half of 1/fs
@@ -9,7 +9,10 @@ fullscale = 1
 num_stages = 6
 
 C1 = 200e-15 # feedback cap
-C2 = 800e-15 # dac cap
+C2 = 600e-15 # dac cap
+
+C3 = 200e-15
+
 # bit per stage is 2.5, fixed
 
 # test spec
@@ -24,6 +27,11 @@ gain = 1e4 # in volts
 op_offset = 0
 cap_mismatch_sigma = 0 # std deviation
 comp_offset = 0
-loop_bw = 5e9 # in Hz, the loop bw of mdac
+op_bw = 100e9
+loop_bw = 1/3*op_bw # in Hz, the loop bw of mdac
 tao = 0.25e-10 # in s, the time constant of S&H
 nonlinear_coefficients = [1,0.1,0.2,0.15,0.1]
+
+cap_mismatch = np.random.normal(1.0, cap_mismatch_sigma, size=3)
+
+[C1real, C2real, C3real] = [C1, C2, C3] * cap_mismatch

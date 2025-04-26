@@ -1,0 +1,20 @@
+Pipeline ADC Static Analysis
+===========================
+
+Configuration:
+- Number of Stages: 7
+- Total Bits: 13.5
+- Full Scale Voltage: 1.00 V
+- Op-Amp Gain: 1.0e+04 V/V
+- Op-Amp Offset: 0.00 mV
+- Capacitor Values: C1 = 200.00 fF, C2 = 600.00 fF, C3 = 200.00 fF
+- Capacitor Mismatch: 0.00%
+- Comparator Offset: 0.00 mV
+- Time Constant: 0.03 ns
+
+Results:
+- Number of unique codes observed: 37
+- Missing codes: 8155
+- DNL: Min = 1003.3679 LSB, Max = 1003.3679 LSB
+- INL: Min = 1003.3679 LSB, Max = 5016.8393 LSB
+- ENOB (estimated from INL): 1.21 bits
